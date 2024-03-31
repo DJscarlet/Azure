@@ -1,0 +1,27 @@
+.popular_anime{
+    width: 100%;
+}
+.pac_body{
+    width: 100%;
+}
+.popular_anime_container{
+    width: 100%;
+    padding: 0 40px;
+    color: white;
+}
+.heading{
+    width: fit-content;
+    margin: 10px 0  0 30px;
+}
+.p_anime_cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+.p_anime_cards a{
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,43 @@
+.r-title{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.r-heading{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.r-body .r-body-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.r-body-container{
+    width: 100%;
+}
+.card-wrapper{
+    width: 100%;
+    max-width: 12.8rem;
+    margin: 0 30px 20px 30px;
+}
+.card-wrapper a{
+    text-decoration: none;
+}
+.card-wrapper a h1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow : hidden;
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+.card-wrapper img{
+    height: 20rem;
+    width: auto;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, transparent 100%);
+    border-radius: 15px;
+}
+.card-wrapper:hover{
+    transform: scale(1.05);
+}

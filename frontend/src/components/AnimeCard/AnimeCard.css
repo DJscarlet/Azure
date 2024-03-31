@@ -1,0 +1,55 @@
+.azure{
+    color: rgb(0, 162, 255);
+}
+.anime-card{
+    height: 23.5em;
+    width: 14em;
+    margin: 15px 20px 20px;
+}
+.anime-card:hover{
+    transform: scale(1.03);
+}
+.anime_card_container{
+    margin: 0;
+}
+.ac_bg_img img{
+    display: flex;
+    height: 321px;
+    width: 224px;
+    justify-content: center;
+    object-fit: cover;
+    margin-bottom: 8px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, transparent 100%);
+}
+.ac_footer{
+    display: flex;
+    color: white;
+}
+.ac_title{
+    width: 11em;
+}
+.ac_title h1,.ac_title h2{
+    font-size: 16px;
+    display:-webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ac_title h2{
+    font-size: 20px;
+}
+.ac_info{
+    text-align: right;
+}
+.ac_info p{
+    font-size: 15px;
+    margin-bottom: 5px
+}
+.font-nunito{
+    font-family: "Nunito", sans-serif;
+    font-weight: 30px;
+}
+.font-lora{
+    font-family: "Lora", serif;
+}

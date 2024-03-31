@@ -1,0 +1,40 @@
+.anime_characters_container{
+    height: fit-content;
+    width: auto;
+    color: white;
+    padding: 20px;
+}
+.anime_characters_container h2{
+    margin-bottom: 2.5rem;
+}
+.anime_characters_list{
+    display: flex;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.character{
+    width: 6rem;
+    height: 10rem;
+}
+.character img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+.character h4{
+    font-size: 12px;
+    width: 5.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media screen and (max-width:1000px){
+    
+}

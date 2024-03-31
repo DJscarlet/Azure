@@ -1,0 +1,162 @@
+.header{
+    height: 70px;
+    width: 100% !important;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #242428;
+    padding: 0 8px;
+}
+.menu, .search, .multi-media, .user_details{
+    display: flex;
+    margin-right: 6px;
+    text-align: center;
+    justify-content: center;
+}
+.header a,
+.header a i{
+    text-decoration: none;
+}
+.menu button{
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 162, 255);
+    font-size: 32px;
+    justify-content: center;
+}
+.menu button::after{
+    border: none;
+}
+.Search_bar{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.search{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 40px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content:left;
+    padding: 0 8.8px;
+    margin: 4px 20px 0 20px;
+}
+.search i{
+    padding-top: 6px;
+    cursor: pointer;
+    color: black;
+}
+.Search_bar form{
+    width: 100%;
+    max-width: 350px;
+}
+.search input{
+    border: none;
+    height: calc(100%-3px);
+    outline: none;
+    font-size: 16px;
+    color: black;
+    margin-left: 5px;
+    width: 100%;
+    padding-bottom: 4.5px;
+}
+.multi-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mm-component{
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    color: rgb(0, 162, 255);
+    font-size: 30px;
+    justify-content: center;
+}
+.mm-name{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.user_details{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    bottom: 25%;
+    text-align: center;
+    justify-content: center;
+}
+.user_details p{
+    color: rgb(0, 162, 255);
+    margin-right: 7px;
+    cursor: pointer;
+}
+.user_details p:hover{
+    color: rgb(0, 120, 189);;
+}
+.user_profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.menu_content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+}
+.close, .menu_elements{
+    width: 25%;
+    display: flex;
+    position: relative;
+    justify-content:left;
+    padding: 0 30px;
+    line-height: 15px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.close_icon .close_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: auto 0;
+    padding: 0;
+    cursor: pointer;
+}
+/* Optional: Style menu content and button */
+.close_name{
+    font-weight:bolder;
+}
+.menu_elements{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu_elements_componet h1{
+    display: flex;
+    font-weight: 20px;
+    font-size: 20px;
+    color: white;
+}
+.menu_elements_componet a{
+    text-decoration: none;
+}
+@media screen and (max-width:1000px){
+    .user_details{
+        display: none;
+    }
+}

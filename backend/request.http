@@ -1,0 +1,45 @@
+###
+post http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username":"Luffy",
+    "phoneno":"9030313262",
+    "email":"Luffy@gmail.com",
+    "password":"12345"
+}
+
+###Login
+post http://localhost:5000/user/login
+content-Type: application/json
+
+{
+    "username":"Luffy",
+    "password":"12345"
+}
+
+###adding the history
+post http://localhost:5000/user/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikx1ZmZ5IiwiaWF0IjoxNzExMjg3MzAzLCJleHAiOjE3MTEyODkxMDN9.eW4Mg7EngZ3wTe6vrxuZAYFMGIJHwOfDcK8qQ2lbX5g
+content-Type: application/json
+
+{
+    "username":"Luffy",
+    "history":{
+        "animename":"One Piece",
+        "episodes":{
+            "number":1039,
+            "time":"{{$timestamp}}"
+        }
+    }
+} 
+ 
+###get users continue wathing
+get http://localhost:5000/user/userHistory/Luffy
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikx1ZmZ5IiwiaWF0IjoxNzExMjg3MzAzLCJleHAiOjE3MTEyODkxMDN9.eW4Mg7EngZ3wTe6vrxuZAYFMGIJHwOfDcK8qQ2lbX5g
+
+###get trending slide data
+get http://localhost:5000/home/trending_anime_data_retrieve
+
+###get slides dataSS
+get http://localhost:5000/home/slide_data
